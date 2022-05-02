@@ -13,6 +13,9 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 });
 
+// serve static files 
+app.use(express.static('public'));
+
 //app.listen(3000)
 
 // start server
