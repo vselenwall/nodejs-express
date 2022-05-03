@@ -5,19 +5,71 @@
 }
 
 body {
-    background-color:deeppink;
     width: 100%;
     justify-content: center;
+    text-align: center;
+}
+
+main {
+    padding: 8rem;
+    background-color: #DDE1DD;
 }
 
 h1 {
-    font-size: 2rem;
-    padding: 10rem;
+    font-size: 3rem;
+    padding: 2rem;
     justify-content: center;
 }
 
+h2 {
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
 header {
-    background-color: aquamarine;
-    padding: 10rem;
+    padding: 7rem;
     justify-content: center;
+    /*background-color: #36535e;*/
+    background-image: url("/images/stove.jpg");
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    color: #f1f7f1;
+}
+
+nav {
+    background-color: #2b3635;
+    padding: 2rem;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 0.5rem;
+}
+
+.active {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    background-color: #A4B8B6;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #A4B8B6;
+}
+
+footer {
+    background-color: #A4B8B6;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
 }

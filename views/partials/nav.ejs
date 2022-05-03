@@ -1,0 +1,24 @@
+<nav>
+    <!--<a href="/start">Start</a> <a href="/about">About</a> <a href="/contact">Contact</a>-->
+
+    <!-- Use obj data from route to build navigation links -->
+
+    <% locals.navigationLinks.forEach(element => { %> 
+
+        <!-- Kontrollera i forEach loopen om ett element överensstämmer m. aktuell sida (locals.page)-->
+        <a href="<%- element.toLowerCase() %>"
+            
+            <% if (element.toLowerCase() === locals.page) { %>
+                class="active"
+            <% } %>
+            
+            >
+
+        <%- element %> 
+
+        </a> 
+
+        <% }) %>
+
+
+</nav>
